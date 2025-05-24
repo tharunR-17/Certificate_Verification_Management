@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Shanthini R\\Documents\\22MIC0061 3rd year\\Win Sem\\Blockchain\\Final Project\\Certificate_Management_System-master\\contracts\\CertificateVerification.sol": {
+      "lastModificationDate": 1744809620161,
+      "contentHash": "958e1825b30d8f1d1833c3a10f01a8c2",
+      "sourceName": "contracts/CertificateVerification.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CertificateVerification"
+      ]
+    }
+  }
+}

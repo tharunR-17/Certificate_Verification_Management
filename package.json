@@ -1,0 +1,26 @@
+{
+  "name": "certificate-verification",
+  "version": "1.0.0",
+  "description": "Blockchain Certificate Verification System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network ganache",
+    "test": "npx hardhat test"
+  },
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "certificate-verification": "file:",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ipfs-http-client": "^56.0.3",
+    "multer": "^1.4.5-lts.1",
+    "web3": "^1.9.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.19.0"
+  }
+}

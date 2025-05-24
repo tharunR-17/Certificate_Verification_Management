@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Certificate Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hidden { display: none; }
+        .certificate-preview {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Certificate Management System</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="text-center">Student Portal</h2>
+                <p class="text-center text-muted">View and access your certificates</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="viewCertificateForm" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="viewStudentName" class="form-label">Student Name</label>
+                                <input type="text" class="form-control" id="viewStudentName" required>
+                                <div class="invalid-feedback">Please enter student name</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="viewCertId" class="form-label">Certificate ID</label>
+                                <input type="text" class="form-control" id="viewCertId" required>
+                                <div class="invalid-feedback">Please enter certificate ID</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">View Certificate</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="viewResult" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center py-3">
+        <small class="text-muted">© 2025 Certificate Management System. All rights reserved.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs-http-client/dist/index.min.js"></script>
+    <script src="student.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "certificateId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "studentName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "courseName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "issueDate",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "CertificateIssued",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "certificates",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "studentName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "courseName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "issueDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "certificateId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isValid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "studentName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "courseName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "certificateId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "issueDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "issueCertificate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "certificateId",
+						"type": "string"
+					}
+				],
+				"name": "verifyCertificate",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "studentName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "courseName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "issueDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isValid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CertificateVerification.sol": "CertificateVerification"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/CertificateVerification.sol": {
+			"keccak256": "0x9259a955a4b1550b407e23916bde25291b1a36b04c4bfae551efdf90f73bc030",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://66bf64f7f112ceafe48287464e991a73e90fd01b0a2b9a4373bdbe0790a5b402",
+				"dweb:/ipfs/QmdsSyR1hTgErBKxYRXe4GUELm64wP4ffiBnnBFB4AjB5x"
+			]
+		}
+	},
+	"version": 1
+}

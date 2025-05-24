@@ -1,0 +1,312 @@
+{
+  "address": "0xb32F543df5cAE02102aFFeAb8235A0610747a435",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "certificateId",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "studentName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "courseName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "issueDate",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "ipfsHash",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "imageHash",
+          "type": "string"
+        }
+      ],
+      "name": "CertificateIssued",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "issuer",
+          "type": "address"
+        }
+      ],
+      "name": "IssuerAuthorized",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "issuer",
+          "type": "address"
+        }
+      ],
+      "name": "IssuerRevoked",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "issuer",
+          "type": "address"
+        }
+      ],
+      "name": "authorizeIssuer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authorizedIssuers",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "certificates",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "studentName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "courseName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "issueDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "certificateId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "ipfsHash",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "isValid",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "imageHash",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "studentName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "certificateId",
+          "type": "string"
+        }
+      ],
+      "name": "getCertificateByStudent",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "courseName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "issueDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "ipfsHash",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "isValid",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "studentName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "courseName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "certificateId",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "issueDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "ipfsHash",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "imageHash",
+          "type": "string"
+        }
+      ],
+      "name": "issueCertificate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "issuer",
+          "type": "address"
+        }
+      ],
+      "name": "revokeIssuer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "certificateId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "uploadedImageHash",
+          "type": "string"
+        }
+      ],
+      "name": "verifyCertificate",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "studentName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "courseName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "issueDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "ipfsHash",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "isValid",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "imageVerified",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
